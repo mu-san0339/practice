@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px) {
+    .bicycle ul {
+        flex-direction: column;
+        width: cover;
+    }
+    .bicycle li {
+        justify-content: center;
+        width: 90%;
+    }
+}
