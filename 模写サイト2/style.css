@@ -80,6 +80,9 @@ li {
     justify-content: space-between;
     padding: 40px 0;
 }
+.header-logo-link img {
+    display: block;
+}
 /* メイン */
 main {
     margin-top: 115px;
