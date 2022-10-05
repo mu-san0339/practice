@@ -1,0 +1,150 @@
+@charset "UTF-8";
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* css雛形 */
+body {
+    display: block;
+    color: #333;
+    font-size: 0.875rem;
+    min-height: 100vh;
+}
+a {
+    color: #333;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+a:hover {
+    opacity: 0.7;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+/* ハンバーガーメニュー */
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+}
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: all .4s;
+    position: absolute;
+    z-index: 3;
+}
+.hamburger span:nth-child(1) {
+    top: 8px;
+}
+.hamburger span:nth-child(2) {
+    top: 16px;
+}
+.hamburger.active span:nth-of-type(1) {
+    top: 8px;
+    transform: translateY(6px) rotate(-45deg);
+}
+.hamburger.active span:nth-of-type(2) {
+    top: 16px;
+    transform: translateY(-6px) rotate(45deg);
+}
+.hamburger-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px 50px;
+    transform: translateX(-100%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.8);
+}
+.hamburger-link {
+    margin-bottom: 20px;
+}
+.hamburger-link a {
+    color: #fff;
+}
+/* 全体的なcss */
+.wrapper {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+/* ヘッダー */
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+/* メイン */
+main {
+    margin-top: 115px;
+}
+/* main-contents */
+.main-contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: yellow;
+}
+.page-title {
+    margin: 150px 0 50px 0;
+}
+.main-contents-item {
+    width: 23%;
+    margin-bottom: 40px;
+}
+.next-page {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.select-page-inner {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 100px;
+}
+.select-page-link {
+    padding: 0 20px;
+}
+.item {
+    background-color: aquamarine;
+}
+/* フッター */
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+.footer-link-items {
+    display: flex;
+    justify-content: start;
+    
+}
+.footer-link-item {
+    font-size: 0.75rem;
+    margin-right: 30px;
+}
+footer .copyright {
+    font-size: 0.625rem;
+}
