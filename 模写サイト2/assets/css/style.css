@@ -86,7 +86,6 @@ li {
     top: 0;
     left: 0;
     width: 100%;
-    text-align: center;
     position: fixed;
     background-color: #fff;
     z-index: 2;
@@ -96,10 +95,6 @@ li {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-}
-.header-logo a {
-    display: block;
-    width: 180px;
 }
 /* メイン */
 main {
